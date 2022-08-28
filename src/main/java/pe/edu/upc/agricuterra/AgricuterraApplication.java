@@ -1,13 +1,14 @@
 package pe.edu.upc.agricuterra;
 
-import org.springframework.boot.CommandLineRunner;
+//import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
-public class AgricuterraApplication implements CommandLineRunner {
+public class AgricuterraApplication extends SpringBootServletInitializer {
 
 	
 
@@ -20,7 +21,7 @@ public class AgricuterraApplication implements CommandLineRunner {
 		SpringApplication.run(AgricuterraApplication.class, args);
 	}
 
-	@Override
+	//@Override
 	public void run(String... args) throws Exception {
 	
 	}
