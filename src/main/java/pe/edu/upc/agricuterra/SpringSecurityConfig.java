@@ -35,7 +35,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers("/home").access("hasRole('ROLE_ADMINISTRATOR') or hasRole('ROLE_AGRICULTOR')or hasRole('ROLE_ESPECIALISTA')or hasRole('ROLE_EMPRESARIO')or hasRole('ROLE_PRUEBA')")
 		.and().formLogin().successHandler(sucessHandler).loginPage("/").loginProcessingUrl("/")
 		// Si el login es exitoso, retorna a /home
-		.defaultSuccessUrl("/preportes/reporte1").permitAll().and().logout().logoutSuccessUrl("/login").permitAll()
+		.defaultSuccessUrl("/home").permitAll().and().logout().logoutSuccessUrl("/login").permitAll()
 		// Si el usuario va a una ruta sin acceso, devuelve a /error_403 (Configurado en MvcConfig)
 		.and().exceptionHandling().accessDeniedPage("/error403");
 
