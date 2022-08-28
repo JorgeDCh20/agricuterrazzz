@@ -16,16 +16,16 @@ public class Sembrio {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idSembrio;
 	
-	@Column(name="nombreSembrio", length=48,nullable=false)
+	@Column(name="nombreSembrio",nullable=false)
 	private String nombreSembrio;
 	
-	@Column(name="temperaturaIdeal", length=35,nullable=false)
+	@Column(name="temperaturaIdeal",nullable=false)
 	private double temperaturaIdeal;
 	
-	@Column(name="phIdeal", length=8,nullable=false)
+	@Column(name="phIdeal",nullable=false)
 	private double phIdeal;
 	
-	@Column(name="humedadIdeal", length=35,nullable=false)
+	@Column(name="humedadIdeal",nullable=false)
 	private double humedadIdeal;
 
 	
